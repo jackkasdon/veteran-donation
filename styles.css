@@ -1,0 +1,105 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #1A1F2B;
+}
+.navbar {
+  background-color: #1A1F2B;
+  padding: 10px;
+  text-align: center;
+}
+.navbar a {
+  color: rgb(76, 73, 228);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar .logo {
+  height: 40px;
+  vertical-align: left;
+  margin-right: 15px;
+}
+header.hero {
+  background: url('background.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+}
+header.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+header.hero > div {
+  position: relative;
+  z-index: 2;
+}
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.btn {
+  background-color: #d4461a;
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bitcoin {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+.bitcoin img {
+  width: 180px;
+  margin: 10px auto;
+}
+footer {
+  background-color: #1A1F2B;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.card {
+  background-color: white;
+  border-left: 5px solid #db4a1d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card h4 {
+  margin-top: 15px;
+  color: #1A1F2B;
+  font-style: italic;
+}
+section ul {
+  margin-top: 1em;
+  padding-left: 1.5em;
+}
+section ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
